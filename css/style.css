@@ -1,0 +1,98 @@
+/*基礎設定*/
+
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Indie+Flower|Roboto:100,400,700');
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #383C47;
+    position: relative;
+}
+
+.cv {
+    width: 800;
+    background: white;
+    margin: 100px 100px;
+    z-index: 2;
+    position: relative;
+    box-shadow: 10px 20px 10px -5px black;
+}
+
+header,
+.main,
+footer {
+    padding: 30px;
+}
+
+header {
+    padding-top: 40px;
+    background: #eee;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+}
+
+.name {
+    font-size: 50px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.experience {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*作出底線效果*/
+    border-bottom: 1px solid #ccc;
+}
+
+.experience:last-child {
+    border-bottom: none;
+}
+
+footer {
+    background: #383C47;
+    color: white;
+}
+
+footer * {
+    color: white;
+}
+
+
+/*加上偽元素的body   
+偽元素一定要設content
+*/
+
+html:after {
+    content: "";
+    width: 100%;
+    height: 300px;
+    background: #E2C0B9;
+    /*set the postion */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
